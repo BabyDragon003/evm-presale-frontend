@@ -23,32 +23,6 @@ body {
 }
 
 .app {
-  min-height: 100vh;
-  background-image: url("./assets/background.gif");
-  background-size: 100vw 100vh;
-  background-attachment: fixed;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.app::before {
-  background-color: #f9161280;
-  content: '';
-  display: block;
-  height: 100%;
-  position: fixed;
-  width: 100%;
-}
-
-span {
-  color: white;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
   color: white;
 }
 

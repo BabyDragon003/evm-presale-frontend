@@ -23,32 +23,6 @@ export const useSigningClient = () => {
     getMinPresaleCap,
     getStartPresaleTime,
     getEndPresaleTime,
-    getpTokenPriceForBUSD,
-    getBNBForBUSD,
-    getBUSDForBNB,
-    getUserPaidBUSD,
-    getCACOPriceInWeb3,
-    getRebaseFrequency,
-    getNextRebase,
-    getMarketCap,
-    getTotalEarned,
-
-    buy_pToken,
-
-    setPresaleStartTime,
-    setPresaleEndTime,
-    setFeesOnNormalTransfer,
-    setInitialDistributionFinished,
-    setMaxCap,
-    setMinCap,
-    setFeeReceivers,
-    setFees
-  } = useContext(Web3Context)
-  return {
-    web3,
-    loading,
-    pending,
-    chainID,
     walletAddress,
     balance,
 
