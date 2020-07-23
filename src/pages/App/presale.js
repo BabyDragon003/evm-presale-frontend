@@ -3,26 +3,16 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import IconButton from '@mui/material/IconButton';
 import { Reveal } from 'react-awesome-reveal';
 import { toast } from 'react-toastify';
+import Swal from 'sweetalert2';
+import LoadingButton from '@mui/lab/LoadingButton';
+import { Link } from '@reach/router';
+
+import SelectCoin from '../../components/app/SelectCoin';
+import ConnectWallet from '../../components/menu/ConnectWallet';
 import Clock from '../../components/app/Clock';
 import { numberWithCommas, IsSmMobile, fadeInUp, fadeIn, getUTCNow, getUTCDate, isEmpty } from '../../utils';
 import { useSigningClient } from '../../context/web3Context';
 import { config, def_config } from '../../config';
-import './app.scss';
-
-const MAX_AMOUNT = def_config.MAX_PRESALE_AMOUNT;
-const CACO_COIN = [
-  { code: 2, label: 'CACO' },
-];
-
-const PresaleBody = () => {
-  const {
-    web3,
-    pending,
-    balance,
-    getStartPresaleTime,
-    getEndPresaleTime,
-    getTotalPresaleAmount,
-    getMaxPresaleCap,
     getMinPresaleCap,
     getpTokenPriceForBUSD,
     getBNBForBUSD,

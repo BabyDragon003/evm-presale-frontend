@@ -3,26 +3,16 @@ import { CircularProgressbarWithChildren, buildStyles } from "react-circular-pro
 import "react-circular-progressbar/dist/styles.css";
 import { createGlobalStyle } from 'styled-components';
 // import { getUTCNow } from '../../components/utils';
+// import { getRebaseFrequency, getNextRebase } from "../../core/web3";
+// import * as selectors from '../../store/selectors';
+
+const GlobalStyles = createGlobalStyle`
+  .progress-content {
+    max-width: 200px;
     width: 100%;
     border-radius: 50%;
     padding: 10px;
     margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    filter: drop-shadow(0px 0px 4px #FFFFFF);
-  }
-
-  .rebase-content {
-    text-align: center;
-    .rebase-title {
-      font-size: 16px;
-      @media only screen and (max-width: 1500px) and (min-width: 1200px) {
-        font-size: 12px;
-      }
-    }
-    .rebase-time {
-      font-size: 20px;
-    }
   }
 `;
 

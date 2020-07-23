@@ -3,26 +3,16 @@ $color: #000706;
 // $color_app: #5CF28F;
 $color_app: black;
 $bg-color: linear-gradient(135deg, #00F5FF 0%, #00E87D 85%, #00E66A 100%);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*general*/
+html {
   scroll-behavior: auto;
 }
 
 body {
-  font-family: "Poppins", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  color: white;
-  word-spacing: 0px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.app {
-  min-height: 100vh;
-  background-image: url("./assets/background.gif");
-  background-size: 100vw 100vh;
-  background-attachment: fixed;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .app::before {

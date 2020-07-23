@@ -3,26 +3,16 @@
     "inputs": [],
     "name": "buyTokensByBNB",
     "outputs": [],
-        "internalType": "uint256",
-        "name": "_amountPrice",
-        "type": "uint256"
-      }
-    ],
-    "name": "buyTokensByBUSD",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "renounceOwnership",
-    "outputs": [],
-    "stateMutability": "nonpayable",
+    "stateMutability": "payable",
     "type": "function"
   },
   {
     "inputs": [
       {
+        "internalType": "uint256",
+        "name": "_amountPrice",
+        "type": "uint256"
+      }
         "internalType": "address",
         "name": "_router",
         "type": "address"
