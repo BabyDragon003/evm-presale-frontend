@@ -23,7 +23,3 @@ module.exports = (config, context) => {
           ],
         },
       ],
-    },
-    ignoreWarnings: [/Failed to parse source map/],
-  };
-};
