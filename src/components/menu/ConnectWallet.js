@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useSigningClient } from "../../context/web3Context";
 import { isEmpty } from "../../utils";
 

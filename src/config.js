@@ -1,4 +1,3 @@
-const presale = require('./abi/presale.json');
 const caco = require('./abi/caco.json');
 const busd = require('./abi/busd.json');
 const router = require('./abi/router.json');
