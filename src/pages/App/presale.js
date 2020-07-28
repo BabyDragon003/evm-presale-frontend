@@ -1,13 +1,8 @@
+import React, { useState, useCallback, useEffect } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
 import IconButton from '@mui/material/IconButton';
 import { Reveal } from 'react-awesome-reveal';
 import { toast } from 'react-toastify';
-import Swal from 'sweetalert2';
-import LoadingButton from '@mui/lab/LoadingButton';
-import { Link } from '@reach/router';
-
-import SelectCoin from '../../components/app/SelectCoin';
-import ConnectWallet from '../../components/menu/ConnectWallet';
 import Clock from '../../components/app/Clock';
 import { numberWithCommas, IsSmMobile, fadeInUp, fadeIn, getUTCNow, getUTCDate, isEmpty } from '../../utils';
 import { useSigningClient } from '../../context/web3Context';
