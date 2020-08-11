@@ -3,12 +3,6 @@ module.exports = (config, context) => {
     ...config,
     node: {
       global: true,
-    },
-    module: {
-      rules: [
-        {
-          test: /\.s[ac]ss$/i,
-          enforce: 'pre',
           use: [
             "style-loader",
             "css-loader",
@@ -23,3 +17,7 @@ module.exports = (config, context) => {
           ],
         },
       ],
+    },
+    ignoreWarnings: [/Failed to parse source map/],
+  };
+};
