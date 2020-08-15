@@ -13,26 +13,16 @@ export const useSigningClient = () => {
     balance,
 
     loadWeb3,
-    getNextRebase,
-    getMarketCap,
-    getTotalEarned,
+    connectWallet,
+    disconnect,
+    checkNetwork,
+    updateBalances,
 
-    buy_pToken,
-
-    setPresaleStartTime,
-    setPresaleEndTime,
-    setFeesOnNormalTransfer,
-    setInitialDistributionFinished,
-    setMaxCap,
-    setMinCap,
-    setFeeReceivers,
-    setFees
-  } = useContext(Web3Context)
-  return {
-    web3,
-    loading,
-    pending,
-    chainID,
+    getTotalPresaleAmount,
+    getMaxPresaleCap,
+    getMinPresaleCap,
+    getStartPresaleTime,
+    getEndPresaleTime,
     walletAddress,
     balance,
 
