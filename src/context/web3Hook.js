@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Web3Modal from 'web3modal';
 import Web3 from 'web3';
 import WalletConnectProvider from "@walletconnect/web3-provider";
