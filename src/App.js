@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Router, Location, Redirect } from '@reach/router';
 import { } from 'stylis-plugin-rtl';
 import { ToastContainer } from 'react-toastify';
@@ -18,6 +17,27 @@ const PosedRouter = ({ children }) => (
             {children}
           </Router>
         </div>
+      </div>
+    )}
+  </Location>
+);
+
+
+export const ScrollTop = ({ children, location }) => {
+  useEffect(() => window.scrollTo(0, 0), [location])
+  return children
+}
+
+function App() {
+  return (
+    <div className='app'>
+      <SingingWeb3Provider>
+        <PosedRouter>
+          <ScrollTop path="/">
+            <Presale path="/" />
+            <Admin path="/admin" />
+          </ScrollTop>
+        </PosedRouter>
       </SingingWeb3Provider>
       <ScrollToTopBtn />
       <ToastContainer

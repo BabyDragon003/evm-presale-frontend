@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import { getUTCNow } from '../../utils';
 
 class Clock extends Component {
