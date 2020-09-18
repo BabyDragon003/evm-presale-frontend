@@ -18,27 +18,6 @@ import './app.scss';
 const MAX_AMOUNT = def_config.MAX_PRESALE_AMOUNT;
 const CACO_COIN = [
   { code: 2, label: 'CACO' },
-];
-
-const PresaleBody = () => {
-  const {
-    web3,
-    pending,
-    balance,
-    getStartPresaleTime,
-    getEndPresaleTime,
-    getTotalPresaleAmount,
-    getMaxPresaleCap,
-    getMinPresaleCap,
-    getpTokenPriceForBUSD,
-    getBNBForBUSD,
-    getBUSDForBNB,
-    getUserPaidBUSD,
-    buy_pToken
-  } = useSigningClient();
-
-  const [startTime, setStartTime] = useState(0);
-  const [endTime, setEndTime] = useState(0);
   const [deadLine, setDeadLine] = useState(0);
   const [leftCap, setLeftCap] = useState('');
   const [maxCap, setMaxCap] = useState(0);
