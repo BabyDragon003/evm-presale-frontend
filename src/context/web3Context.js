@@ -1,3 +1,4 @@
+import { createContext, useContext } from "react";
 import { useSigningWeb3Client } from './web3Hook';
 
 const Web3Context = createContext(null);
@@ -7,17 +8,6 @@ export const useSigningClient = () => {
     web3,
     loading,
     pending,
-    chainID,
-    walletAddress,
-    balance,
-
-    loadWeb3,
-    connectWallet,
-    disconnect,
-    checkNetwork,
-    updateBalances,
-
-    getTotalPresaleAmount,
     getMaxPresaleCap,
     getMinPresaleCap,
     getStartPresaleTime,
