@@ -8,17 +8,6 @@ import { PopperUnstyled } from '@mui/base';
 const StyledButton = styled('button')(
   ({ theme }) => `
   font-family: IBM Plex Sans, sans-serif;
-  font-size: 1.2rem;
-  box-sizing: border-box;
-  width: 110px;
-  height: 40px;
-  background: linear-gradient(135deg, rgba(0, 245, 255, 0.1) 0%, rgba(0, 232, 125, 0.1) 87.58%, rgba(0, 230, 106, 0.1) 100%);
-  border: solid 1px rgba(0, 232, 125, 0.5);
-  border-radius: 50px;
-  padding: 0px 10px;
-  text-align: left;
-  line-height: 1.5;
-  color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
