@@ -8,6 +8,17 @@ export const useSigningClient = () => {
     web3,
     loading,
     pending,
+    chainID,
+    walletAddress,
+    balance,
+
+    loadWeb3,
+    connectWallet,
+    disconnect,
+    checkNetwork,
+    updateBalances,
+
+    getTotalPresaleAmount,
     getMaxPresaleCap,
     getMinPresaleCap,
     getStartPresaleTime,

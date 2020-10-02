@@ -8,6 +8,17 @@ $bg-color: linear-gradient(135deg, #00F5FF 0%, #00E87D 85%, #00E66A 100%);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /*general*/
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  word-spacing: 0px;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
