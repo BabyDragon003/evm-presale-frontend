@@ -13,26 +13,16 @@ html {
 }
 
 body {
-}
-
-.app::before {
-  background-color: #f9161280;
-  content: '';
-  display: block;
-  height: 100%;
-  position: fixed;
-  width: 100%;
-}
-
-span {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   color: white;
+  word-spacing: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+.app {
   color: white;
 }
 

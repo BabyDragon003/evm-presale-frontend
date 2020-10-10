@@ -13,6 +13,22 @@
         "name": "_amountPrice",
         "type": "uint256"
       }
+    ],
+    "name": "buyTokensByBUSD",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
         "internalType": "address",
         "name": "_router",
         "type": "address"
