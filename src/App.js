@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Router, Location, Redirect } from '@reach/router';
 import { } from 'stylis-plugin-rtl';
 import { ToastContainer } from 'react-toastify';
@@ -12,22 +13,6 @@ const PosedRouter = ({ children }) => (
   <Location>
     {({ location }) => (
       <div id='routerhang'>
-        <div key={location.key}>
-          <Router location={location}>
-            {children}
-          </Router>
-        </div>
-      </div>
-    )}
-  </Location>
-);
-
-
-export const ScrollTop = ({ children, location }) => {
-  useEffect(() => window.scrollTo(0, 0), [location])
-  return children
-}
-
 function App() {
   return (
     <div className='app'>
