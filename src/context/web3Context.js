@@ -1,4 +1,3 @@
-import { createContext, useContext } from "react";
 import { useSigningWeb3Client } from './web3Hook';
 
 const Web3Context = createContext(null);
