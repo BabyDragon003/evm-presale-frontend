@@ -3,16 +3,11 @@ module.exports = (config, context) => {
     ...config,
     node: {
       global: true,
-          use: [
-            "style-loader",
-            "css-loader",
-            {
-              loader: "sass-loader",
-              options: {
-                // Prefer `dart-sass`
-                implementation: require("sass"),
-              },
-            },
+    },
+    module: {
+      rules: [
+        {
+          test: /\.s[ac]ss$/i,
             "source-map-loader"
           ],
         },
