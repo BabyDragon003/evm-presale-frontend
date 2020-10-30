@@ -13,16 +13,11 @@ import Clock from '../../components/app/Clock';
 import { numberWithCommas, IsSmMobile, fadeInUp, fadeIn, getUTCNow, getUTCDate, isEmpty } from '../../utils';
 import { useSigningClient } from '../../context/web3Context';
 import { config, def_config } from '../../config';
-    getMinPresaleCap,
-    getpTokenPriceForBUSD,
-    getBNBForBUSD,
-    getBUSDForBNB,
-    getUserPaidBUSD,
-    buy_pToken
-  } = useSigningClient();
+import './app.scss';
 
-  const [startTime, setStartTime] = useState(0);
-  const [endTime, setEndTime] = useState(0);
+const MAX_AMOUNT = def_config.MAX_PRESALE_AMOUNT;
+const CACO_COIN = [
+  { code: 2, label: 'CACO' },
   const [deadLine, setDeadLine] = useState(0);
   const [leftCap, setLeftCap] = useState('');
   const [maxCap, setMaxCap] = useState(0);
