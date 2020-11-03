@@ -1,13 +1,8 @@
+import React, { useRef, useState, useCallback, useEffect } from "react";
 import { CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { createGlobalStyle } from 'styled-components';
 // import { getUTCNow } from '../../components/utils';
-// import { getRebaseFrequency, getNextRebase } from "../../core/web3";
-// import * as selectors from '../../store/selectors';
-
-const GlobalStyles = createGlobalStyle`
-  .progress-content {
-    max-width: 200px;
     width: 100%;
     border-radius: 50%;
     padding: 10px;
