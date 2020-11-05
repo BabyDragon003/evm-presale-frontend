@@ -8,16 +8,11 @@ $bg-color: linear-gradient(135deg, #00F5FF 0%, #00E87D 85%, #00E66A 100%);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /*general*/
-  -moz-osx-font-smoothing: grayscale;
+html {
+  scroll-behavior: auto;
 }
 
-.app {
-  min-height: 100vh;
-  background-image: url("./assets/background.gif");
-  background-size: 100vw 100vh;
-  background-attachment: fixed;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
 }
 
 .app::before {
