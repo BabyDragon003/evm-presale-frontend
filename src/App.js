@@ -13,16 +13,11 @@ const PosedRouter = ({ children }) => (
   <Location>
     {({ location }) => (
       <div id='routerhang'>
-function App() {
-  return (
-    <div className='app'>
-      <SingingWeb3Provider>
-        <PosedRouter>
-          <ScrollTop path="/">
-            <Presale path="/" />
-            <Admin path="/admin" />
-          </ScrollTop>
-        </PosedRouter>
+        <div key={location.key}>
+          <Router location={location}>
+            {children}
+          </Router>
+        </div>
       </SingingWeb3Provider>
       <ScrollToTopBtn />
       <ToastContainer
