@@ -18,4 +18,25 @@ module.exports = {
       // => @media (max-width: 767px) { ... }
 
       'sm': {'max': '639px'},
+      // => @media (max-width: 639px) { ... }
+
+      'xsm': {'max': '399px'},
+      // => @media (max-width: 399px) { ... }
+    }
+  },
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+        ],
+      },
+    ],
+
+  },
+  plugins: [],
 }
