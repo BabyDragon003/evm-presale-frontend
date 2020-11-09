@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Reveal from 'react-awesome-reveal';
 import { createGlobalStyle } from 'styled-components';
 import dayjs from 'dayjs';
